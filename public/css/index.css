@@ -1,0 +1,47 @@
+:root {
+    --backgound: #E5E5E5; 
+    --text-color: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 93.75%;
+}
+
+body {
+    height: 100vh;
+    background: var(--background);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+
+/*header*/
+.main-header img {
+    height: 2.3rem;
+    width: 9rem;
+    cursor: pointer;
+}
+
+.main-header a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem; 
+    padding-top: 0.25rem;
+    cursor: pointer;
+}

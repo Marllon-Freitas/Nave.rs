@@ -1,0 +1,87 @@
+section.section-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form {
+    width: 90%;
+}
+
+.authentication-form {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 28rem;
+    height: 24rem; 
+    left: 26rem; 
+    top: 9.75px; 
+
+    border: 2px solid var(--text-color);
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.authentication-form img {
+    width: 14.709rem;
+    height: 3.75rem;
+
+    margin-bottom: 1rem;
+}
+
+.input-block {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.3rem; 
+    line-height: 1.7rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.input-block label span{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.input-block input{
+    width: 100%;
+    display: block;
+    height: 2.2rem;
+    padding-left: 0.5rem;
+}
+
+.input-block input::placeholder {
+    opacity: 0.7;
+    font-size: 1rem; 
+}
+
+.btn-login {
+    height: 2.3rem;
+    width: 100%;
+
+    margin-top: 1.5rem;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    background-color: var(--text-color);
+
+    border: none;
+}
+
+.btn-login span {
+    color: #FFF;
+
+    line-height: 1.125rem;
+    font-size: normal;
+    font-weight: 600;
+    font-size: 1rem; 
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Adicionando a Fonte-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!--Adicionando o CSS-->
+    <link rel="stylesheet" href="../../public/css/index.css">
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <link rel="stylesheet" href="../../public/css/modals.css">
+    <link rel="stylesheet" href="../../public/css/animation.css">
+    <link rel="stylesheet" href="../../public/css/responsive.css">
+
+    <title>Nave.rs | Página Inicial </title>
+</head>
+<body>
+    <header class="main-header animate-appear">
+        <a href="main.html">
+            <img
+                src="../../public/assets/logo.svg"
+                alt="Logo da Nave.rs"
+                class="logo-Nave-main"
+            />
+        </a>
+        <a href="index.html">Sair</a>
+    </header>
+    <main class="main-content animate-appear">
+        <div class="main-content-header">
+            <h1>Navers</h1>
+            <a href="add-new-Naver.html">
+                <button
+                    type="submit"
+                    class="btn-add-Naver"
+                >
+                    Adicionar Naver
+                </button>
+            </a>
+        </div>
+        <ul class="content-Navers animate-up">
+            <li class="card" onclick="Modals.openGeral()">
+                <img
+                    class="Naver-photo"
+                    src="../../public/assets/example-img-1.png" 
+                    alt="Naver" 
+                />
+                <h2 class="name">Juliano Reis</h2>
+                <p class="role">Front-End Developer</p>
+                <img
+                    class="remove-Naver"
+                    src="../../public/assets/Delete-Icon.svg"
+                    alt="Deletar Naver"
+                />
+                <img
+                    class="edit-Naver"
+                    src="../../public/assets/Edit-Icon.svg"
+                    alt="Editar Naver"
+                />
+            </li>
+            <li class="card">
+                <img
+                    class="Naver-photo"
+                    src="../../public/assets/example-img-2.png" 
+                    alt="Naver" 
+                />
+                <h2 class="name">Gabriel do Couto</h2>
+                <p class="role">Front-End Developer</p>
+                <img
+                    class="remove-Naver"
+                    src="../../public/assets/Delete-Icon.svg"
+                    alt="Deletar Naver"
+                />
+                <img
+                    class="edit-Naver"
+                    src="../../public/assets/Edit-Icon.svg"
+                    alt="Editar Naver"
+                />
+            </li>
+            <li class="card">
+                <img
+                    class="Naver-photo"
+                    src="../../public/assets/example-img-3.png" 
+                    alt="Naver" 
+                />
+                <h2 class="name">Eduardo Bittencourt</h2>
+                <p class="role">Front-End Developer</p>
+                <img
+                    class="remove-Naver"
+                    src="../../public/assets/Delete-Icon.svg"
+                    alt="Deletar Naver"
+                />
+                <img
+                    class="edit-Naver"
+                    src="../../public/assets/Edit-Icon.svg"
+                    alt="Editar Naver"
+                />
+            </li>
+            <li class="card">
+                <img
+                    class="Naver-photo"
+                    src="../../public/assets/example-img-4.png" 
+                    alt="Naver" 
+                />
+                <h2 class="name">Gustavo Pinho</h2>
+                <p class="role">Technology Manager</p>
+                <img
+                    class="remove-Naver"
+                    src="../../public/assets/Delete-Icon.svg"
+                    alt="Deletar Naver"
+                />
+                <img
+                    class="edit-Naver"
+                    src="../../public/assets/Edit-Icon.svg"
+                    alt="Editar Naver"
+                />
+            </li>
+        </ul>
+    </main>
+
+    <div class="modal">
+        <div class="modal-overview">
+            <div class="personal-photo">
+                <img
+                    class="Naver-photo"
+                    src="../../public/assets/example-img-1.png"
+                    alt="Naver"
+                />
+            </div>
+            <div class="personal-informations">
+                <a href="#" onclick="Modals.closeGeral()">
+                    <img
+                        class="close-modal"
+                        src="../../public/assets/close-modal.svg"
+                        alt="Fechar"
+                    />
+                </a>
+
+                <h2 class="name">Juliano Reis</h2>
+                <p class="role">Front-End Developer</p>
+                <h3>Idade</h3>
+                <p>Lorem</p>
+                <h3>Tempo de empresa</h3>
+                <p>Lorem</p>
+                <h3>Projetos que participou</h3>
+                <p>Lorem</p>
+
+                <div class="edit-personal">
+                    <a href="#">
+                        <img
+                            onclick="Modals.closePersonal(), Modals.openDelete()"
+                            class="remove-Naver"
+                            src="../../public/assets/Delete-Icon.svg"
+                            alt="Deletar Naver"
+                        />
+                    </a>
+                    <a href="edit-Naver.html">
+                        <img
+                            class="edit-Naver"
+                            src="../../public/assets/Edit-Icon.svg"
+                            alt="Editar Naver"
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="delete-Naver">
+            <h2>Excluir Naver</h2>
+            <p>Tem certeza que deseja excluir esse Naver?</p>
+            <button
+                type="submit"
+                class="btn-confirm-delete"
+            >
+                <span>Excluir</span>
+            </button>
+
+            <button
+                onclick="Modals.openDeleteCancel()"
+                type="submit"
+                class="btn-decline-delete"
+            >
+                <span>Cancelar</span>
+            </button>
+        </div>
+
+        <div class="confirm-modal delete">
+            <a href="#">
+                <img
+                    class="close-modal"
+                    src="../../public/assets/close-modal.svg"
+                    alt="Fechar"
+                />
+            </a>
+            <h2>Naver excluído</h2>
+            <p>Naver excluído com sucesso!</p>
+        </div>
+    </div>
+    <script src="../../public/js/modals.js"></script>
+</body>
+</html>
